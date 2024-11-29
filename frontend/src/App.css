@@ -1,0 +1,570 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Pretendard-Regular';
+  /* font-family: 'Noto Sans KR', sans-serif; */
+}
+
+/* 홈 화면 */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background-color: #f0f0f0; */
+  height: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.menu {
+  font-weight: 500;
+  display: inline-block;
+  padding: 7px;
+  /* 패딩 조정 */
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  /* 기본 텍스트 색상 */
+  position: relative;
+  overflow: hidden;
+  /* 내용이 넘칠 경우 숨김 처리 */
+  border-bottom: 3px solid #fe6100;
+  transition: color 0.3s;
+  /* 텍스트 색상 변화를 위한 트랜지션 */
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  /* 처음에 아래쪽에 위치 */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fe6100;
+  transition: top 0.3s;
+  /* top 속성의 트랜지션 효과 */
+  z-index: -1;
+  /* 배경이 텍스트 뒤로 가게 설정 */
+}
+
+.menu:hover {
+  color: white;
+  /* 텍스트 색상 변경 */
+}
+
+.menu:hover::before {
+  top: 0;
+  /* hover 시 배경이 위로 올라옴 */
+}
+
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+  flex-grow: 1;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cta {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1;
+}
+
+.icon {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #555;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.icon:hover {
+  background-color: white;
+  color: #333;
+  z-index: 10;
+}
+
+.icon:hover .tooltip {
+  display: block;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -35px;
+  /* 툴팁을 아이콘 위로 위치 */
+  left: 50%;
+  /* 툴팁을 아이콘 가운데에 위치 */
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1;
+  /* 툴팁이 다른 요소 위에 표시되도록 */
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* 회원가입 */
+/* Wrapper to center the form */
+.signin-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+/* Container styling */
+.signin-form-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  height: 80%;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling with Flexbox */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  /* Adjust the gap between elements */
+  margin: 5px;
+}
+
+/* Label styling */
+.signin-form-label {
+  font-weight: bold;
+}
+
+/* Input fields styling */
+.signin-form-input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit button styling */
+.signin-form-submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Add some hover effects */
+.signin-form-submit:hover {
+  background-color: #0056b3;
+}
+
+/* 로그인 */
+/* Wrapper to center the form */
+.login-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+/* Container styling */
+.login-form-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  height: 80%;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling with Flexbox */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  /* Adjust the gap between elements */
+  margin: 5px;
+}
+
+/* Label styling */
+.login-form-label {
+  font-weight: bold;
+}
+
+/* Input fields styling */
+.login-form-input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit button styling */
+.login-form-submit {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Add some hover effects */
+.login-form-submit:hover {
+  background-color: #0056b3;
+}
+
+/* =============================================================About Me====================================================== */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* height: 100%; */
+  min-height: 100vh;
+  text-align: center;
+  background-color: #2c2c2c;
+  position: relative;
+  border-top: 3px solid #fe6100;
+  border-bottom: 3px solid #fe6100;
+}
+
+.about-section {
+  width: 100%;
+  max-width: 1200px;
+  /* 섹션의 최대 너비를 설정하여 보기 좋게 만듭니다 */
+  margin: 0 auto;
+  /* 섹션 전체를 중앙 정렬, 요소는 따로 좌측 정렬 */
+  padding: 30px;
+  /* 상단 패딩 추가 */
+}
+
+.about-section h1 {
+  text-align: left;
+  /* 왼쪽 정렬 */
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-section h2 {
+  text-align: left;
+  /* 왼쪽 정렬 */
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.avatar {
+  margin: 20px 0;
+}
+
+.avatar-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.skillList {
+  display: flex;
+}
+
+.skillDetail {
+  width: 50%;
+}
+
+.hashtags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hashtags span {
+  color: white;
+  background-color: #444;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.team-button {
+  background-color: #444;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border: white;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* 가벼운 그림자 */
+}
+
+.team-button .arrow {
+  margin-left: 5px;
+}
+
+/* ====================================================Project 부분====================================================== */
+
+.project-container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 100vh;
+  background-color: #2c2c2c;
+}
+
+.project-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.project-section h1 {
+  text-align: left;
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+/* Card 기본 스타일 */
+
+.card {
+  background-color: #333 !important;
+  /* 어두운 배경 */
+  color: #fff !important;
+  /* 텍스트는 흰색 */
+  border-radius: 10px;
+  /* 카드의 모서리를 둥글게 */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* 가벼운 그림자 */
+  width: 270px;
+  /* 카드의 너비를 고정 */
+  margin: 1px;
+  /* 카드 사이의 간격 */
+  flex: 0 0 auto;
+  /* 카드가 고정된 너비를 가지도록 설정 */
+  position: relative;
+  /* 상대 위치 설정 */
+}
+
+.overlay {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  /* overlay가 카드 전체를 덮도록 설정 */
+  position: absolute;
+  /* 절대 위치 설정 */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: opacity 0.3s ease;
+  /* 부드러운 전환 효과 */
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* overlay 상태의 카드 제목 */
+.overlay .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+  /* 텍스트는 흰색 */
+}
+
+/* overlay 상태의 버튼 스타일 */
+.overlay button {
+  background-color: #333 !important;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background-color: white !important;
+  color: black;
+}
+
+/* 상단 이미지 스타일 */
+.card-img-top {
+  width: 100%;
+  height: 150px;
+}
+
+/* 카드의 본문 스타일 */
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+/* 카드 제목 */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 카드 설명 텍스트 */
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+  /* 설명 텍스트는 약간 회색으로 */
+}
+
+/* 버튼 스타일 */
+button {
+  background-color: #333 !important;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white !important;
+  color: black;
+}
+
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}

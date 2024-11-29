@@ -1,3 +1,4 @@
+import '../App.css';
 import { React, useState } from 'react'
 import { Card, Button } from 'react-bootstrap'
 // import '../css/Card.css'

@@ -1,3 +1,4 @@
+import '../App.css';
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import projectList from '../json/project.json'
@@ -28,7 +29,6 @@ const Project = ({ id, navTabs }) => {
   let project = projectList.projectList.map(item => <ProjectCard key={item.title} data={item} id={item.Mtitle}></ProjectCard>)
 
   return (
-      <Container id={id} ref={navTabs[1].targetRef}>
         <div className='project-container'>
           <section className='project-section'>
             <h1>Project</h1>
@@ -37,7 +37,6 @@ const Project = ({ id, navTabs }) => {
             </div>
           </section>
         </div>
-      </Container>
   )
 }
 

@@ -1,3 +1,4 @@
+import '../App.css';
 import React, { useEffect, useState } from 'react'
 import instance from '../axios'
 import { Link, useNavigate } from 'react-router-dom'

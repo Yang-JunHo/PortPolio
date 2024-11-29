@@ -1,3 +1,4 @@
+import '../App.css';
 import React, { useState } from 'react'
 import instance from '../axios'
 import { useNavigate } from 'react-router-dom'

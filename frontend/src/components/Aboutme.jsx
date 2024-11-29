@@ -1,3 +1,4 @@
+import '../App.css';
 import { React, useState } from 'react'
 // import '../css/AboutMe.css'
 // import useScrollAnimation from '../hooks/useScrollAnimation';
@@ -53,7 +54,6 @@ const Aboutme = ({ id, navTabs }) => {
   };
 
   return (
-      <RecordComponent id={id} ref={navTabs[0].targetRef}>
         <div className="about-container">
           <section className="about-section">
             <h1>About me</h1>
@@ -101,7 +101,6 @@ const Aboutme = ({ id, navTabs }) => {
             </div>
           </section>
         </div>
-      </RecordComponent>
   )
 }
 

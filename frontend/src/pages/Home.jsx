@@ -43,16 +43,12 @@ const Home = () => {
         <Header />
         <main className="hero">
           <div className="hero-text">
-            {/* <h1>풀스텍을 꿈꾸는</h1> */}
-            <h1>개발자 양준호입니다.</h1>
+            {/* <h2>같이의 가치를 꿈꾸는 개발자 양준호입니다.</h2> */}
             <h2>
-              역지사지 마인드<br />
-              책임감을 가지고 일하는 개발자
+              사용자를 생각하는 역지사지 마인드,<br />
+              포기하지 않고 책임감 있게 일하는 개발자<br/>
+              양준호입니다.
             </h2>
-            {/* <p>
-            사용자를 생각하는 역지사지 마인드,<br />
-            포기하지 않고 책임감 있게 일하는 개발자입니다.
-          </p> */}
           </div>
           <div className="hero-image">
             <img src="https://cdn-api.elice.io/api-attachment/attachment/8f9df08ab6654c228a50513bb7184c8c/%E1%84%91%E1%85%AE%E1%86%AF%E1%84%89%E1%85%B3%E1%84%90%E1%85%A2%E1%86%A8.png" alt="프로필" />
@@ -77,7 +73,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div>
+      <div className="container1">
         <Aboutme />
         <Project />
       </div>
