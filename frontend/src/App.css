@@ -28,6 +28,7 @@ html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden; 
 }
 
 .container1 {
@@ -102,9 +103,11 @@ nav a {
   justify-content: space-between;
   padding: 50px 0;
   flex-grow: 1;
+  /* flex-wrap: wrap; */
 }
 
 .hero-text {
+  /* flex-wrap: wrap; */
   flex: 1;
 }
 
@@ -325,7 +328,9 @@ img {
   /* justify-content: center; */
   align-items: center;
   /* height: 100%; */
+  /* min-width: 100vw; 화면 전체 너비를 강제로 차지 */
   min-height: 100vh;
+  overflow-x: hidden; 
   text-align: center;
   background-color: #2c2c2c;
   position: relative;
@@ -421,6 +426,7 @@ img {
   align-items: center;
   min-height: 100vh;
   background-color: #2c2c2c;
+  overflow-x: hidden; 
 }
 
 .project-section {
