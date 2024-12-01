@@ -18,7 +18,7 @@ html {
   font-family: Arial, sans-serif;
   /* background-color: #f0f0f0; */
   height: 100%;
-  width: 100%;
+  width:100%;
 }
 
 .container {
@@ -44,7 +44,7 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 
 .menu {
@@ -319,6 +319,7 @@ img {
 
 /* =============================================================About Me====================================================== */
 .about-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -384,6 +385,7 @@ img {
   margin-bottom: 20px;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .hashtags span {
@@ -563,8 +565,18 @@ button:hover {
 }
 
 
+
 /* 반응형 */
 @media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
   .card {
     width: 100%;
   }
