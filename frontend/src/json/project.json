@@ -4,7 +4,7 @@
             "Mtitle": "ArtCloud",
             "Stitle": "(아트클라우드)",
             "outline": "본인의 작품 또는 감상한 모든 예술 작품을 공유할 수 있는 소통의 장을 마련해주는 서비스",
-            "content": "",
+            "content": "팀프로젝트",
             "imgSrc": "/img/ArtCloud.png",
             "github": "https://github.com/Yang-JunHo"
         },
@@ -12,7 +12,7 @@
             "Mtitle": "MatchMaker",
             "Stitle": "(매치메이커)",
             "outline": "모든 유저들에게 ELO레이팅을 활용하여 각자의 풋살 실력을 수치화 하고 밸런스가 맞는 경기를 즐길 수 있도록 구장 및 팀원을 매칭 시켜주는 서비스",
-            "content": "",
+            "content": "팀프로젝트",
             "imgSrc": "/img/MatchMaker.png",
             "github": "https://github.com/Yang-JunHo/Project_MatchMaker"
         },
@@ -20,17 +20,18 @@
             "Mtitle": "CloOn",
             "Stitle": "(클로온)",
             "outline": "이미지 기반 신체 치수 측정, 신체 치수와 옷의 사이즈별 치수를 비교하여 히트맵 시각화",
-            "content": "",
+            "content": "팀프로젝트",
             "imgSrc": "/img/CloOn.png",
             "github": "https://github.com/Yang-JunHo/Project_CloOn"
         },
         {
-            "Mtitle": "미정",
-            "Stitle": "(미정)",
-            "outline": "미정",
-            "content": "",
-            "imgSrc": "",
-            "github": ""
+            "Mtitle": "Netflix",
+            "Stitle": "(넷플릭스 사이트)",
+            "outline": "API를 활용한 넷플릭스와 같은 사이트를 만들어보자!",
+            "content": "개인프로젝트",
+            "imgSrc": "/img/netflix.png",
+            "github": "https://github.com/Yang-JunHo/Netflix",
+            "site": "https://yang-junho.github.io/Netflix/"
         }
     ]
 }

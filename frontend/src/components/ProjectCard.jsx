@@ -24,6 +24,10 @@ const ProjectCard = ({ id, data }) => {
     window.location.href = data.github;
   };
 
+  const handleSiteRedirect = (data) => {
+    window.location.href = data.site;
+  };
+
   return (
     <Card className="card">
       {data.imgSrc && <Card.Img variant="top" src={`${process.env.PUBLIC_URL}${data.imgSrc}`} className="card-img-top" />}
@@ -32,6 +36,10 @@ const ProjectCard = ({ id, data }) => {
         <Card.Title className="card-title">{data.Stitle}</Card.Title>
         <Card.Text className="card-text">
           {data.outline}
+          <br/><br/>
+          <div style={{ color: "black"}}>
+          {data.content}
+          </div>
         </Card.Text>
       </Card.Body>
       <div className='overlay'>
@@ -42,6 +50,11 @@ const ProjectCard = ({ id, data }) => {
             onMouseEnter={() => setButtonText("PDF 다운로드")}
             onMouseLeave={() => setButtonText("자세히보기")}>{buttonText}</Button>
           <Button onClick={() => handleRedirect(data)}>Github바로가기</Button>
+          { 
+            data.site
+            ? <Button onClick={() => handleSiteRedirect(data)}>사이트 바로가기</Button>
+            : null
+          }
         </Card.Body>
       </div>
     </Card>
