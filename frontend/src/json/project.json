@@ -25,13 +25,13 @@
             "github": "https://github.com/Yang-JunHo/Project_CloOn"
         },
         {
-            "Mtitle": "Netflix",
-            "Stitle": "(넷플릭스 사이트)",
-            "outline": "API를 활용한 넷플릭스와 같은 사이트를 만들어보자!",
+            "Mtitle": "MovieReview",
+            "Stitle": "(영화리뷰 사이트)",
+            "outline": "API를 활용한 영화리뷰 사이트를 만들어보자!",
             "content": "개인프로젝트",
             "imgSrc": "/img/netflix.png",
-            "github": "https://github.com/Yang-JunHo/Netflix",
-            "site": "https://yang-junho.github.io/Netflix/"
+            "github": "https://github.com/Yang-JunHo/MovieReview",
+            "site": "https://yang-junho.github.io/MovieReview/"
         }
     ]
 }
