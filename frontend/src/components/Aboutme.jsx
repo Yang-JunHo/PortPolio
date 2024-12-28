@@ -1,9 +1,5 @@
 import '../App.css';
 import { React, useState } from 'react'
-// import '../css/AboutMe.css'
-// import useScrollAnimation from '../hooks/useScrollAnimation';
-// import ScrollAni from '../ScrollAni';
-// import tw from 'tailwind-styled-components';/
 import { IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -12,7 +8,7 @@ import { IoLogoNodejs } from "react-icons/io5";
 import { IoLogoPython } from "react-icons/io5";
 import { SiMysql } from "react-icons/si";
 import { SiOracle } from "react-icons/si";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const Aboutme = () => {
 

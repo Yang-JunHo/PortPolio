@@ -1,9 +1,6 @@
 import React from 'react'
-// import projectList from '../json/project.json'
-import Header from '../components/Header';
 import Aboutme from '../components/Aboutme'
 import Project from '../components/Project'
-// import { DiGithubBadge } from "react-icons/di";
 import { FiPaperclip } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaAngleDoubleUp } from "react-icons/fa";
@@ -11,7 +8,6 @@ import { ImNewspaper } from "react-icons/im";
 import '../App.css';
 
 const Home = () => {
-  // console.log('projectList', projectList.projectList);
 
   const handlePortDownload = () => {
     const pdfUrl = `https://storage.googleapis.com/portpolio1/PortPolio.pdf`; // GCS URL
@@ -40,7 +36,7 @@ const Home = () => {
   return (
     <>
       <div className="cta">
-        <a onClick={() => handlePortDownload()} className="icon email-icon">
+        <a onClick={() => handlePortDownload()} className="icon ">
           <ImNewspaper />
           <span className="tooltip">포트폴리오.pdf</span>
         </a>
