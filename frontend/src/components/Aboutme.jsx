@@ -14,16 +14,7 @@ import { SiMysql } from "react-icons/si";
 import { SiOracle } from "react-icons/si";
 import { motion } from "framer-motion"
 
-
-// JavaScript에는 인터페이스가 없기 때문에 이를 삭제합니다.
-// export const TabsPropsT = {
-//   navTabs: [],  // 배열 형태로 정의합니다.
-//   id: undefined // 선택적인 속성은 undefined로 처리할 수 있습니다.
-// };
-
 const Aboutme = () => {
-
-  //   const { scrollRef, scrollEl } = useScrollAnimation();
 
   const [buttonText, setButtonText] = useState("자세히 보기 ➔");
 
@@ -54,7 +45,6 @@ const Aboutme = () => {
         <section className="about-section">
           <h1>About me</h1>
           <div className="avatar">
-            {/* <img src='/img/profile.png' className="avatar-image" alt='프로필'></img> */}
             <img src={`${process.env.PUBLIC_URL}/img/profile.png`} className="avatar-image" alt='프로필'></img>
           </div>
           <div className="hashtags">
@@ -76,7 +66,6 @@ const Aboutme = () => {
           <div className='skillList'>
             <div className='skillDetail'>
               <h2>Frontend</h2>
-              {/* <img src={`${process.env.PUBLIC_URL}/img/html.png`} className="skill-image" alt="html" /> */}
               <IoLogoHtml5 size="3em" color="red" />
               <IoLogoCss3 size="3em" color="blue" />
               <IoLogoJavascript size="3em" color="yellow" />
@@ -84,13 +73,11 @@ const Aboutme = () => {
             </div>
             <div className='skillDetail'>
               <h2>Backend</h2>
-              {/* <img src={`${process.env.PUBLIC_URL}/img/html.png`} className="skill-image" alt="html" /> */}
               <IoLogoNodejs size="3em" color="green" />
               <IoLogoPython size="3em" color="white" />
             </div>
             <div className='skillDetail'>
               <h2>DataBase</h2>
-              {/* <img src={`${process.env.PUBLIC_URL}/img/html.png`} className="skill-image" alt="html" /> */}
               <SiMysql size="3em" color="white" />
               <SiOracle size="3em" color="orange" />
             </div>
