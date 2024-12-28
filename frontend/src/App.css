@@ -464,7 +464,6 @@ img {
   justify-content: space-evenly;
   height: 100%;
   width: 100%;
-  /* overlay가 카드 전체를 덮도록 설정 */
   position: absolute;
   /* 절대 위치 설정 */
   top: 0;
@@ -531,7 +530,6 @@ img {
   font-size: 1rem;
   margin-bottom: 20px;
   color: #ccc;
-  /* 설명 텍스트는 약간 회색으로 */
 }
 
 /* 버튼 스타일 */
