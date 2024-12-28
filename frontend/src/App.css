@@ -7,23 +7,17 @@
 
 * {
   font-family: 'Pretendard-Regular';
-  /* font-family: 'Noto Sans KR', sans-serif; */
 }
 
 /* 홈 화면 */
 body,
 html {
-  /* margin: 0; */
-  /* padding: 0; */
   font-family: Arial, sans-serif;
-  /* background-color: #f0f0f0; */
   height: 100%;
   width:100%;
 }
 
 .container {
-  /* max-width: 1200px; */
-  /* margin: 0 auto; */
   padding: 20px;
   min-height: 100vh;
   display: flex;
@@ -32,9 +26,6 @@ html {
 }
 
 .container1 {
-  /* max-width: 1200px; */
-  /* margin: 0 auto; */
-  /* padding: 20px; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -45,7 +36,6 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* padding: 20px 0; */
   height: 5%;
 }
 
@@ -104,11 +94,9 @@ nav a {
   justify-content: space-between;
   padding: 50px 0;
   flex-grow: 1;
-  /* flex-wrap: wrap; */
 }
 
 .hero-text {
-  /* flex-wrap: wrap; */
   flex: 1;
 }
 
@@ -204,7 +192,6 @@ img {
 }
 
 /* 회원가입 */
-/* Wrapper to center the form */
 .signin-form-wrapper {
   display: flex;
   justify-content: center;
@@ -288,7 +275,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 7px;
-  /* Adjust the gap between elements */
   margin: 5px;
 }
 
@@ -326,10 +312,7 @@ img {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  /* height: 100%; */
-  /* min-width: 100vw; 화면 전체 너비를 강제로 차지 */
   min-height: 100vh;
   overflow-x: hidden; 
   text-align: center;
