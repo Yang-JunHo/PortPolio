@@ -32,15 +32,6 @@
             "imgSrc": "/img/netflix.png",
             "github": "https://github.com/Yang-JunHo/MovieReview",
             "site": "https://yang-junho.github.io/MovieReview/"
-        },
-        {
-            "Mtitle": "TodoList_redux",
-            "Stitle": "(할일 작성 페이지)",
-            "outline": "Redux를 활용한 TodoList 페이지를 만들어보자!",
-            "content": "개인프로젝트",
-            "imgSrc": "/img/todolist.png",
-            "github": "https://github.com/Yang-JunHo/React_todoredux.git",
-            "site": "https://yang-junho.github.io/React_todoredux/"
         }
     ]
 }
