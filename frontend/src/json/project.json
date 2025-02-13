@@ -40,7 +40,7 @@
             "content": "개인프로젝트",
             "imgSrc": "/img/LibraryApp.png",
             "github": "https://github.com/Yang-JunHo/library-app.git",
-            "site": "https://http://54.180.145.156:8080/v1/index.html"
+            "site": "http://54.180.145.156:8080/v1/index.html"
         }
     ]
 }
